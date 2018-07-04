@@ -8,6 +8,8 @@ This example shows, how powerful is Redux - I managed to create that app in ~1 w
 
 Check out the preview of working version: http://smoothcv.appidea.pl
 
+**mateuszCV.json is an examplary file to import into the SmoothCV.**
+
 ## Available Scripts
 
 In the project directory, you can run:
