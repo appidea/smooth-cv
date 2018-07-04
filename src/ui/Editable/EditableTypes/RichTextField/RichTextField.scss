@@ -1,0 +1,28 @@
+.rich-text-editor {
+
+  &-toolbar {
+    overflow: auto;
+    margin: 3px -3px;
+
+    button {
+      float: left;
+      background: transparent;
+      color: #FFF;
+      border: 1px solid #FFF;
+      display: block;
+      margin: 0 3px;
+    }
+  }
+
+  textarea {
+    width: 100%;
+    height: 16vh;
+    margin: 3px 0;
+    border: 1px solid #FFF;
+    font-family: inherit;
+    font-size: inherit;
+    display: block;
+    background: transparent;
+    color: #FFF;
+  }
+}

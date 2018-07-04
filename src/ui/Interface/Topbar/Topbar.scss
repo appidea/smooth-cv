@@ -1,0 +1,48 @@
+@import '../../../Variables';
+
+.topbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 30px;
+  left: auto;
+  background: $brand;
+  text-align: center;
+  padding: 6px 0;
+  box-shadow: 1px 0 3px rgba(0,0,0,0.3);
+
+  &-title {
+    width: 30%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 62%;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  &-right {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+
+    & > span {
+      position: relative;
+      top: -6px;
+      font-size: 1.3em;
+      color: #FFF;
+      left: -10px;
+      font-weight: 700;
+    }
+  }
+
+  &-left {
+    position: absolute;
+    left: 10px;
+    top: 7px;
+    width: 25%;
+  }
+}

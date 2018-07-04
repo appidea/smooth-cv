@@ -1,0 +1,23 @@
+@import './Variables';
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,700');
+@import "../node_modules/react-toggle-switch/dist/css/switch.min.css";
+@import '../node_modules/react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
+@import url('https://use.fontawesome.com/releases/v5.0.13/css/all.css');
+
+body {
+  background: $workspace-background;
+  font-family: $site-font;
+  color: $lead-dark;
+}
+
+.help {
+  width: 10px;
+  height: 10px;
+  font-size: 11px;
+  font-style: normal;
+  background: #FFF;
+  border-radius: 8px;
+  border: 1px solid $brand;
+  color: $brand;
+  line-height: 1;
+}

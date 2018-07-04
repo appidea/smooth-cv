@@ -1,0 +1,41 @@
+.layout-picker {
+  overflow: auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3em;
+  color: #FFF;
+  top: 2px;
+  position: relative;
+  overflow: hidden;
+
+  button {
+    background: transparent;
+    font-size: inherit;
+    line-height: inherit;
+    border: 0;
+    color: inherit;
+    outline: none;
+  }
+
+  &-current {
+    padding: 10%;
+  }
+
+  &-nav-left, &-nav-right {
+    position: absolute;
+    top: 0;
+    width: 10%;
+
+    &.disabled {
+      color: rgba(255,255,255,0.5);
+    }
+  }
+
+  &-nav-left {
+    left: 0;
+  }
+
+  &-nav-right {
+    right: 0;
+  }
+}

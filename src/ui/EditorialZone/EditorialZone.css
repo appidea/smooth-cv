@@ -1,0 +1,16 @@
+.document-edit-mode .editorial-zone {
+  min-height: 3vw;
+  margin: 2px 0;
+  background-color: rgba(0,0,0,0.1);
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 5px, rgba(255,255,255,.2) 5px, rgba(255,255,255,.2) 10px);
+}
+
+.editorial-zone {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.document-edit-mode .editorial-zone.over {
+  background-color: rgba(154,70,131,0.3);
+}

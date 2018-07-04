@@ -1,0 +1,45 @@
+.editable-editor.experience-field {
+  .experience-field-inner {
+    max-height: 40vw;
+    overflow: auto;
+  }
+
+  .slider {
+    padding: 12px 10px;
+
+    .slider-pit {
+      font-size: 0.75em;
+      margin-left: -5px;
+      margin-right: -5px;
+      top: 24px;
+    }
+  }
+
+  .experience-group {
+    padding: 0 10px 10px;
+    margin-bottom: 15px;
+    background: rgba(255,255,255,0.1);
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.1)
+  }
+
+  .experience-group-caption {
+    margin: 0 -10px;
+    background: #FFF;
+    padding: 4px 10px;
+    color: #4f85bb;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-weight: bold;
+
+    button {
+      float: right;
+      background: transparent;
+      border: 0;
+      color: #4f85bb;
+      font-size: 1em;
+      margin-right: -10px;
+      padding: 0 10px;
+    }
+  }
+}

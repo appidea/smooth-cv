@@ -1,0 +1,102 @@
+$minimal-theme-lead-color: #37abc8;
+
+.document-edit-mode .minimal-theme .component-actual .editable .editable-view {
+  display: block;
+}
+
+.minimal-theme {
+  .component-actual.skills {
+    width: 100%;
+
+    .timeline {
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+      position: relative;
+
+      li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      padding: 0;
+      margin: 3em 0;
+
+      &:before {
+        display: block;
+        content: ' ';
+        height: 0.1em;
+        background: $minimal-theme-lead-color;
+        width: 100%;
+        position: absolute;
+        top: 2em;
+      }
+
+
+      li {
+        display: flex;
+        flex-flow: column;
+        text-align: left;
+        position: relative;
+
+        &:after {
+          display: block;
+          content: ' ';
+          width: 0.7em;
+          height: 0.7em;
+          background: $minimal-theme-lead-color;
+          border-radius: 50%;
+          position: absolute;
+          top: 1.64em;
+        }
+
+        .year {
+          display: block;
+        }
+
+        .skill-list {
+          display: inline-block;
+          margin-top: 2em;
+          margin-left: 0.1em;
+          position: relative;
+          padding: 0.6em;
+          background: $minimal-theme-lead-color;
+          color: #FFF;
+          max-width: 80%;
+
+          &:after {
+            content: ' ';
+            display: block;
+            width: 0.1em;
+            height: 1.2em;
+            position: absolute;
+            left: 0.18em;
+            bottom: 100%;
+            background: $minimal-theme-lead-color;
+          }
+        }
+
+        &:last-child {
+          text-align: right;
+          align-items: flex-end;
+
+          &:after {
+            right: 0;
+          }
+
+          .skill-list {
+            margin-left: 0;
+            margin-right: 0.1em;
+
+            &:after {
+              right: 0.18em;
+              left: inherit;
+            }
+          }
+        }
+
+      }
+    }
+  }
+}

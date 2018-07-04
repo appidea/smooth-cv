@@ -1,0 +1,32 @@
+@mixin document-animation {
+  &.animate {
+    transition: transform 0.3s;
+    transform-style: preserve-3d;
+    transition-timing-function: linear;
+  }
+
+  .document-inner {
+    display: block;
+  }
+
+  &-wrapper {
+    perspective: 180vw;
+  }
+
+  &.collapsed {
+    .document-inner {
+      display: none
+    }
+
+    transform: rotate3d(0, 1, 0, 90deg);
+  }
+
+  &.collapsed-opposite {
+    .document-inner {
+      display: block;
+      transform: rotateY(-180deg);
+    }
+
+    transform: rotate3d(0, 1, 0, 180deg);
+  }
+}

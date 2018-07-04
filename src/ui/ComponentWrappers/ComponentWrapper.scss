@@ -1,0 +1,69 @@
+@import '../../Variables';
+
+.component-wrapper {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 50%;
+
+  .component-wrapper-toolbar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    min-width: 200px;
+    width: 80%;
+    background: $component-wrapper-toolbar-hl;
+    padding: 3px 6px;
+    z-index: 2;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0px 0px 8px 8px;
+    -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    text-align: center;
+
+    .component-toolbar-btn {
+      background: transparent;
+      color: #FFF;
+      display: inline-block;
+      margin: 0 4px;
+      border: 0;
+      padding: 0 4px;
+      font-size: 1.5vw;
+    }
+
+    .control-group {
+      background: transparent;
+      color: #FFF;
+      display: inline-block;
+
+      * {
+        display: inline-block;
+      }
+
+      a {
+        color: #FFF;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.document-edit-mode {
+  .component-wrapper {
+    border: 1px dashed #21a573;
+    margin: 3px;
+    position: relative;
+    background: $component-wrapper-hl;
+  }
+
+  .component-wrapper:hover .component-wrapper-toolbar {
+    visibility: visible;
+    opacity: 1;
+  }
+}

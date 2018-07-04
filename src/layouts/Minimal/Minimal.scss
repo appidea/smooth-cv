@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i&subset=latin-ext');
+
+.minimal-theme {
+  font-size: 1em;
+  font-family: 'Montserrat';
+  line-height: 1.4;
+
+  h1 {
+    font-size: 1.45em;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.3em;
+    font-weight: 100;
+    margin: 0 0 1em 0;
+    text-transform: uppercase;
+  }
+
+  .personal-data {
+    font-weight: 100;
+    .editable, .editable-view {
+      display: inline-block;
+    }
+
+    .editable-view {
+      &:after {
+        content: ' ';
+        display: inline-block;
+        width: 0.2em;
+      }
+    }
+
+    .names {
+      font-size: 2.7em;
+    }
+
+    .contact {
+      text-transform: uppercase;
+      font-size: 0.85em;
+    }
+  }
+}

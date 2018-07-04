@@ -1,0 +1,23 @@
+.modern-theme {
+  .personal-data {
+
+    &.component-actual {
+      text-align: center;
+    }
+
+    &.component-wrapper {
+      display: block;
+    }
+
+    .editable, .editable-view {
+      display: inline;
+    }
+
+    .editable-view {
+      margin: 0 0.3em;
+      font-size: 0.8em;
+      text-transform: uppercase;
+    }
+  }
+
+}

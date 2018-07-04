@@ -1,0 +1,143 @@
+@import '../../../Variables';
+
+.toolbar {
+  position: fixed;
+  height: 100%;
+  right: 0;
+  width: 200px;
+  margin-top: auto;
+  margin-bottom: auto;
+  top: 100px;
+  padding: 10px;
+  bottom: 0;
+  background: lighten($pantone-emperador, 50%);
+  box-shadow: -1px 0 3px rgba(0,0,0,0.3);
+
+  ul, li {
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &-popover {
+    overflow: auto;
+    background: $lead-dark;
+    padding: 10px;
+    font-size: 0.9em;
+    border-radius: 3px;
+    color: #FFF;
+    font-weight: normal;
+    max-width: 40vw;
+
+    h4 {
+      margin: 0 0 10px 0;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &-section {
+    padding: 0 10px 10px;
+    margin-bottom: 15px;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid $border-dark;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+
+    &-caption {
+      margin: 0 -10px;
+      background: $brand;
+      color: #FFF;
+      padding: 4px 10px;
+      margin-bottom: 4px;
+      text-transform: uppercase;
+      font-size: 0.7em;
+      font-weight: bold;
+    }
+  }
+
+  .toolbar-components {
+    overflow: auto;
+    min-height: 40px;
+
+    .over {
+      background: #F00;
+    }
+
+    .toolbar-component {
+      border: 1px solid $border-dark;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+      padding: 5px;
+      background: #FFF;
+      margin: 5px;
+      cursor: move;
+      font-size: 2em;
+      line-height: 1;
+      width: 37px;
+      text-align: center;
+      float: left;
+      color: $brand;
+      border-radius: 4px;
+      position: relative;
+
+      &-help {
+        position: absolute;
+        bottom: -5px;
+        left: -5px;
+      }
+    }
+  }
+
+  .toolbar-buttons {
+    overflow: auto;
+    margin: 0 5px;
+
+    .toolbar-button {
+      border: 1px solid #bbbbbb;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+      background: #FFF;
+      margin: 5px 0;
+      font-size: 0.85em;
+      line-height: 1;
+      text-align: left;
+      color: $brand;
+      border-radius: 4px;
+      position: relative;
+      display: block;
+      width: 100%;
+      font-weight: 100;
+      outline: none;
+      position: relative;
+      cursor: pointer;
+
+      &:disabled {
+        color: $border-dark;
+      }
+
+      i {
+        margin-right: 10px;
+      }
+
+      &-help {
+        position: absolute;
+        bottom: -5px;
+        left: -5px;
+      }
+
+      input {
+        visibility: visible;
+        opacity: 0;
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+      }
+    }
+  }
+}

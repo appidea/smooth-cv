@@ -1,0 +1,45 @@
+
+.document-edit-mode .minimal-theme .component-actual .editable .editable-view {
+  display: block;
+}
+
+.minimal-theme {
+  .component-actual.experience {
+    width: 100%;
+    .experience-entries {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        display: block;
+        margin-bottom: 1.2em;
+      }
+
+      &-heading-row {
+        display: flex;
+        flex-flow: row;
+        font-size: 1.2em;
+        font-weight: 100;
+
+        .year {
+          display: flex;
+          flex-basis: 20%;
+        }
+
+        h3 {
+          display: flex;
+          flex-basis: 80%;
+          margin: 0 0 0.2em 0;
+          font-size: inherit;
+          font-weight: inherit;
+        }
+      }
+
+      &-role-row {
+        font-size: 0.9em;
+        font-weight: 300;
+      }
+    }
+  }
+}
